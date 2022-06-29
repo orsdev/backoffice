@@ -1,0 +1,33 @@
+.main {
+  margin-top: 44px;
+
+  &__col__two {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: space-between;
+    gap: 20px;
+
+    @media (min-width: 1000px) {
+      width: 80%;
+    }
+  }
+
+  &__content__body {
+    width: calc(100% - 50px);
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__content__divider {
+    margin: 50px 0;
+    width: 80%;
+    opacity: 0.2;
+  }
+
+  &__content__image {
+    margin-right: 20px;
+    width: 50px;
+  }
+}

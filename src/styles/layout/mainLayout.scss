@@ -1,6 +1,11 @@
 .main__layout {
   padding: 4rem;
 
+  @media (min-width: 1000px) {
+    width: 748px;
+    margin: auto;
+  }
+
   &__heading {
     @extend %text-xl;
     color: $color-primary;

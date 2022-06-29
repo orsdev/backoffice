@@ -12,6 +12,11 @@
   line-height: 1.8rem;
 }
 
+%text-lg {
+  @extend %normal;
+  font-size: 2rem;
+}
+
 %text-base {
   @extend %semi-bold;
   font-size: 1.6rem;

@@ -79,7 +79,7 @@
 
   &__labels__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
     gap: 50px;
     row-gap: 30px;
     margin-top: 20px;
@@ -101,21 +101,5 @@
     width: 10px;
     height: 10px;
     margin-right: 5px;
-  }
-
-  &__labels__500 {
-    background-color: $color-warning;
-  }
-
-  &__labels__501 {
-    background-color: $color-purple;
-  }
-
-  &__labels__502 {
-    background-color: $color-secondary;
-  }
-
-  &__labels__other {
-    background-color: $color-accent;
   }
 }
