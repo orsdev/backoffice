@@ -1,0 +1,13 @@
+.button {
+  @extend %text-sm;
+  background-color: $color-bg;
+  border: 1px solid $color-highlight;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &[data-active="true"] {
+    background-color: $color-secondary;
+    color: $color-bg;
+  }
+}
