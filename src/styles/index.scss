@@ -2,3 +2,8 @@
 @import "./utils/variables.scss";
 @import "./base/typography.scss";
 @import "./layout/mainLayout.scss";
+
+@import "./components/button.scss";
+
+@import "./pages/Dashboard/tabs.scss";
+@import "./pages/Dashboard/metrics.scss";
