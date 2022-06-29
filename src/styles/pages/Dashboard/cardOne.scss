@@ -1,0 +1,53 @@
+.card__one {
+  display: flex;
+
+  &__title {
+    @extend %text-base;
+    display: flex;
+    color: $color-primary;
+  }
+
+  &__title__danger {
+    color: $color-danger;
+  }
+
+  &__title__danger &__title__percent {
+    background-color: $color-danger;
+  }
+
+  &__title__percent {
+    @extend %text-xs;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-bg;
+    font-weight: 400;
+    background: #8bc34a;
+    border-radius: 10px;
+    min-height: 18px;
+    min-width: 37px;
+    margin-left: 14px;
+  }
+
+  &__value {
+    @extend %text-lg;
+    color: $color-primary;
+    margin: 5px 0;
+    margin-right: 10px;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+
+    p {
+      @extend %text-xs;
+      color: $color-primary;
+      font-weight: 400;
+    }
+  }
+
+  &__content--light {
+    opacity: 0.6;
+  }
+}
