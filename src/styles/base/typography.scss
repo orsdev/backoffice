@@ -1,15 +1,23 @@
 %semi-bold {
   font-weight: 600;
+  line-height: 1.8rem;
+}
+
+%normal {
+  font-weight: 400;
 }
 
 %text-xl {
   @extend %semi-bold;
   font-size: 2.2rem;
-  line-height: 1.8rem;
 }
 
 %text-base {
   @extend %semi-bold;
   font-size: 1.6rem;
-  line-height: 1.8rem;
+}
+
+%text-sm {
+  @extend %normal;
+  font-size: 1.4rem;
 }
