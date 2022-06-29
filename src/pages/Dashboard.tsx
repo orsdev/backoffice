@@ -1,11 +1,14 @@
+import Main from "../components/Dashboard/Main";
 import MainLayout from "../components/MainLayout";
+import Metrics from "../components/Dashboard/Metrics";
+import Tabs from "../components/Dashboard/Tabs";
 
 const Dashboard = () => {
   return (
     <MainLayout title="Main metrics">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto ex id
-      odio enim quasi, dolorum natus nihil autem, corporis unde quas recusandae
-      ad. In, explicabo similique inventore voluptates nemo maxime.
+      <Tabs />
+      <Metrics />
+      <Main />
     </MainLayout>
   );
 };
