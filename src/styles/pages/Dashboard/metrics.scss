@@ -1,0 +1,121 @@
+.metrics {
+  margin-top: 44px;
+
+  @media (min-width: 1000px) {
+    width: 80%;
+  }
+
+  &__header {
+    display: grid;
+    padding: 0 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__header__title {
+    @extend %text-base;
+    position: relative;
+    color: $color-primary;
+    display: flex;
+  }
+
+  &__header__sub {
+    @extend %text-xs;
+    color: $color-accent;
+    margin-top: 6px;
+  }
+
+  &__header__badge {
+    position: absolute;
+    left: -18px;
+    background-color: $color-success;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }
+
+  &__graph__container {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  &__graph {
+    position: relative;
+    height: 8px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: 1px solid transparent;
+    overflow-x: hidden;
+
+    div {
+      float: left;
+    }
+
+    &__error__500 {
+      background-color: $color-warning;
+      height: 100%;
+      width: 30%;
+    }
+    &__error__501 {
+      background-color: $color-purple;
+      height: 100%;
+      width: 30%;
+    }
+    &__error__502 {
+      background-color: $color-secondary;
+      height: 100%;
+      width: 30%;
+    }
+    &__error__others {
+      background-color: $color-accent;
+      height: 100%;
+      width: 10%;
+    }
+  }
+
+  &__labels__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 50px;
+    row-gap: 30px;
+    margin-top: 20px;
+  }
+
+  &__labels__title {
+    @extend %text-xs;
+    color: $color-primary;
+  }
+
+  &__labels__error {
+    display: flex;
+    align-items: center;
+  }
+
+  &__labels__shape {
+    display: block;
+    border-radius: 2px;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+  }
+
+  &__labels__500 {
+    background-color: $color-warning;
+  }
+
+  &__labels__501 {
+    background-color: $color-purple;
+  }
+
+  &__labels__502 {
+    background-color: $color-secondary;
+  }
+
+  &__labels__other {
+    background-color: $color-accent;
+  }
+}
